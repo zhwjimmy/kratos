@@ -5,7 +5,6 @@ import (
 )
 
 const (
-	_getSwaggerGen = "go get -u github.com/go-kratos/kratos/tool/protobuf/protoc-gen-bswagger"
 	_swaggerProtoc = "protoc --proto_path=%s --proto_path=%s --proto_path=%s --bswagger_out=" +
 		"Mgoogle/protobuf/any.proto=github.com/gogo/protobuf/types," +
 		"Mgoogle/protobuf/duration.proto=github.com/gogo/protobuf/types," +
@@ -16,9 +15,8 @@ const (
 
 func installSwaggerGen() error {
 	if _, err := exec.LookPath("protoc-gen-bswagger"); err != nil {
-		if err := goget(_getSwaggerGen); err != nil {
-			return err
-		}
+		panic("protoc-gen-bswagger not exist")
+
 	}
 	return nil
 }

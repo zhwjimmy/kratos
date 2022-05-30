@@ -7,9 +7,9 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/go-kratos/kratos/tool/protobuf/pkg/extensions/gogoproto"
-	"github.com/go-kratos/kratos/tool/protobuf/pkg/tag"
-	"github.com/go-kratos/kratos/tool/protobuf/pkg/typemap"
+	"kratos/tool/protobuf/pkg/extensions/gogoproto"
+	"kratos/tool/protobuf/pkg/tag"
+	"kratos/tool/protobuf/pkg/typemap"
 )
 
 // GetJSONFieldName get name from gogoproto.jsontag

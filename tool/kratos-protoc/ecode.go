@@ -5,7 +5,6 @@ import (
 )
 
 const (
-	_getEcodeGen = "go get -u github.com/go-kratos/kratos/tool/protobuf/protoc-gen-ecode"
 	_ecodeProtoc = "protoc --proto_path=%s --proto_path=%s --proto_path=%s --ecode_out=" +
 		"Mgoogle/protobuf/any.proto=github.com/gogo/protobuf/types," +
 		"Mgoogle/protobuf/duration.proto=github.com/gogo/protobuf/types," +
@@ -16,9 +15,7 @@ const (
 
 func installEcodeGen() error {
 	if _, err := exec.LookPath("protoc-gen-ecode"); err != nil {
-		if err := goget(_getEcodeGen); err != nil {
-			return err
-		}
+		panic("protoc-gen-ecode not exist")
 	}
 	return nil
 }
