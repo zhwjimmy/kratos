@@ -58,12 +58,12 @@ func create() (err error) {
 		}
 	}
 
-	//if err = generate("./..."); err != nil {
-	//	return
-	//}
-	//if err = generate("./internal/dao/wire.go"); err != nil {
-	//	return
-	//}
+	if err = generate("./..."); err != nil {
+		return
+	}
+	if err = generate("./internal/dao/wire.go"); err != nil {
+		return
+	}
 	return
 }
 
