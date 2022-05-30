@@ -1,6 +1,6 @@
 package memcache
 
-import "github.com/go-kratos/kratos/pkg/stat/metric"
+import "kratos/pkg/stat/metric"
 
 const namespace = "memcache_client"
 

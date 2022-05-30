@@ -1,6 +1,6 @@
 package warden
 
-import "github.com/go-kratos/kratos/pkg/stat/metric"
+import "kratos/pkg/stat/metric"
 
 const (
 	clientNamespace = "grpc_client"

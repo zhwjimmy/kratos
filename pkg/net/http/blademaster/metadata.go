@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-kratos/kratos/pkg/conf/env"
-	"github.com/go-kratos/kratos/pkg/log"
-	"github.com/go-kratos/kratos/pkg/net/criticality"
-	"github.com/go-kratos/kratos/pkg/net/metadata"
+	"kratos/pkg/conf/env"
+	"kratos/pkg/log"
+	"kratos/pkg/net/criticality"
+	"kratos/pkg/net/metadata"
 
 	"github.com/pkg/errors"
 )

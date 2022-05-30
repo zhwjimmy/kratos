@@ -1,7 +1,7 @@
 package mocktrace
 
 import (
-	"github.com/go-kratos/kratos/pkg/net/trace"
+	"kratos/pkg/net/trace"
 )
 
 // MockTrace .

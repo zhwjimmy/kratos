@@ -6,8 +6,8 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/go-kratos/kratos/pkg/ecode"
-	"github.com/go-kratos/kratos/pkg/log"
+	"kratos/pkg/ecode"
+	"kratos/pkg/log"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

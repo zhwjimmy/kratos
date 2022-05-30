@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/go-kratos/kratos/pkg/conf/env"
-	"github.com/go-kratos/kratos/pkg/log/internal/core"
-	"github.com/go-kratos/kratos/pkg/net/metadata"
-	"github.com/go-kratos/kratos/pkg/net/trace"
+	"kratos/pkg/conf/env"
+	"kratos/pkg/log/internal/core"
+	"kratos/pkg/net/metadata"
+	"kratos/pkg/net/trace"
 )
 
 func addExtraField(ctx context.Context, fields map[string]interface{}) {

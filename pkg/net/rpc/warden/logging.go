@@ -9,9 +9,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/peer"
 
-	"github.com/go-kratos/kratos/pkg/ecode"
-	"github.com/go-kratos/kratos/pkg/log"
-	"github.com/go-kratos/kratos/pkg/net/metadata"
+	"kratos/pkg/ecode"
+	"kratos/pkg/log"
+	"kratos/pkg/net/metadata"
 )
 
 // Warden Log Flag

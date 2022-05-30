@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-kratos/kratos/pkg/log"
-	"github.com/go-kratos/kratos/pkg/net/trace"
+	"kratos/pkg/log"
+	"kratos/pkg/net/trace"
 )
 
 const (
