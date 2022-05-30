@@ -14,7 +14,7 @@ import (
 	"strings"
 	"text/template"
 
-	common "github.com/go-kratos/kratos/tool/pkg"
+	common "kratos/tool/pkg"
 )
 
 var (

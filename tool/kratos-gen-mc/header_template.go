@@ -19,9 +19,9 @@ import (
 	{{if .UseStrConv}}"strconv"{{end}}
 	{{if .EnableBatch }}"sync"{{end}}
 NEWLINE
-	{{if .UseMemcached }}"github.com/go-kratos/kratos/pkg/cache/memcache"{{end}}
-	{{if .EnableBatch }}"github.com/go-kratos/kratos/pkg/sync/errgroup"{{end}}
-	"github.com/go-kratos/kratos/pkg/log"
+	{{if .UseMemcached }}"kratos/pkg/cache/memcache"{{end}}
+	{{if .EnableBatch }}"kratos/pkg/sync/errgroup"{{end}}
+	"kratos/pkg/log"
 	{{.ImportPackage}}
 )
 
