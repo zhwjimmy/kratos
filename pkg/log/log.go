@@ -106,7 +106,7 @@ func addFlag(fs *flag.FlagSet) {
 }
 
 // Init create logger with context.
-func Init(conf *Config) {
+func Init(conf *Config, handlers ...Handler) {
 	var isNil bool
 	if conf == nil {
 		isNil = true
@@ -133,6 +133,11 @@ func Init(conf *Config) {
 	}
 	if conf.Dir != "" {
 		hs = append(hs, NewFile(conf.Dir, conf.FileBufferSize, conf.RotateSize, conf.MaxLogFile))
+	}
+	if len(handlers) > 0 {
+		for _, h := range handlers {
+			hs = append(hs, h)
+		}
 	}
 	h = newHandlers(conf.Filter, hs...)
 	c = conf
